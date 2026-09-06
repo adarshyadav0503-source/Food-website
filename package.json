@@ -1,0 +1,20 @@
+{
+  "name": "savoria-food-website",
+  "version": "1.0.0",
+  "description": "Multi-cuisine gourmet food website featuring Indian, Chinese, and Italian cuisines.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "food",
+    "restaurant",
+    "indian-food",
+    "chinese-food",
+    "italian-food",
+    "menu",
+    "ecommerce"
+  ],
+  "author": "Savoria",
+  "license": "MIT"
+}

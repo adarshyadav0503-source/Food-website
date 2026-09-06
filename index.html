@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savoria World Kitchen | Authentic Indian, Chinese & Italian Cuisine</title>
+  <meta name="description" content="Discover the finest authentic Indian tandoori & biryani, Chinese dim sum & wok noodles, and Italian woodfired pizza & pasta at Savoria World Kitchen.">
+  
+  <!-- Google Fonts: Outfit & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <div>
+          <span>Savor<span class="brand-highlight">ia</span></span>
+          <span class="brand-subtitle">World Kitchen</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#cuisines" class="nav-link">Cuisines</a></li>
+        <li><a href="#menu" class="nav-link">Gourmet Menu</a></li>
+        <li><a href="#heritage" class="nav-link">Our Heritage</a></li>
+        <li><a href="#reservation" class="nav-link">Reserve Table</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="icon-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Cart Button with Counter Badge -->
+        <div class="cart-btn-wrapper">
+          <button class="icon-btn" id="cartBtn" title="Open Shopping Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="navCartBadge" style="display: none;">0</span>
+          </button>
+        </div>
+
+        <!-- Table Reservation CTA -->
+        <a href="#reservation" class="book-table-nav-btn">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Book Table</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="icon-btn mobile-menu-toggle" id="mobileMenuToggle" title="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <i class="fa-solid fa-sparkles"></i>
+          <span>Three Great Culinary Capitals • 24 Cook-at-Home Chef Recipes</span>
+        </div>
+        <h1 class="hero-title">
+          Mastering <span class="highlight-indian">Indian Spices</span>, <span class="highlight-chinese">Chinese Wok Hei</span> & <span class="highlight-italian">Italian Artisanship</span>.
+        </h1>
+        <p class="hero-description">
+          Experience an extraordinary culinary expedition. Savor gourmet dining delivered to your door or learn how to cook every signature dish right in your kitchen with our step-by-step masterclass recipes.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn-primary">
+            <i class="fa-solid fa-utensils"></i> Explore Full Menu
+          </a>
+          <a href="#cuisines" class="btn-secondary">
+            <i class="fa-solid fa-compass"></i> Discover Cuisines
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>36+</h3>
+            <p>Signature Dishes</p>
+          </div>
+          <div class="stat-item">
+            <h3>3</h3>
+            <p>Master Cuisines</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.9★</h3>
+            <p>Over 1,200+ Reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-main-card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Gourmet Dining Spread">
+        </div>
+
+        <!-- Floating Badges -->
+        <div class="floating-food-card card-top">
+          <div class="floating-icon fire">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <div>
+            <h4>Live Charcoal & Woodfire</h4>
+            <p>Authentic Slow Cooking</p>
+          </div>
+        </div>
+
+        <div class="floating-food-card card-bottom">
+          <div class="floating-icon star">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <h4>Michelin Inspired Chefs</h4>
+            <p>Handmade Fresh Daily</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CUISINES OVERVIEW ==================== -->
+  <section class="cuisines-overview" id="cuisines">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Culinary Heritage</span>
+        <h2 class="section-title">Explore Our Three Iconic Worlds</h2>
+        <p class="section-subtitle">
+          Every cuisine is prepared with authentic regional ingredients, time-honored techniques, and dedicated specialist chefs.
+        </p>
+      </div>
+
+      <div class="cuisines-grid">
+        <!-- Indian Cuisine Card -->
+        <div class="cuisine-card" data-target-cuisine="indian">
+          <div class="cuisine-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=700&q=80" alt="Indian Cuisine">
+            <div class="cuisine-flag-badge">
+              <span>🇮🇳</span> Indian Kitchen
+            </div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Indian Gastronomy</h3>
+            <p>Rich tandoori marinades, slow-braised Awadhi mutton handi, rich butter chicken gravies, and fragrant saffron-infused dum biryanis.</p>
+            <div class="cuisine-signature-tags">
+              <span class="cuisine-tag">Butter Chicken</span>
+              <span class="cuisine-tag">Awadhi Biryani</span>
+              <span class="cuisine-tag">Dal Makhani</span>
+              <span class="cuisine-tag">Garlic Naan</span>
+            </div>
+            <div class="cuisine-action">
+              <span>View Indian Menu</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chinese Cuisine Card -->
+        <div class="cuisine-card" data-target-cuisine="chinese">
+          <div class="cuisine-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=700&q=80" alt="Chinese Cuisine">
+            <div class="cuisine-flag-badge">
+              <span>🇨🇳</span> Chinese Kitchen
+            </div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Chinese Gastronomy</h3>
+            <p>Blazing wok hei stir-fries, delicate crystal truffle dim sum, Sichuan spicy Dan Dan noodles, and tongue-numbing authentic claypot mapo tofu.</p>
+            <div class="cuisine-signature-tags">
+              <span class="cuisine-tag">Kung Pao Chicken</span>
+              <span class="cuisine-tag">Dim Sum</span>
+              <span class="cuisine-tag">Dan Dan Noodles</span>
+              <span class="cuisine-tag">Mapo Tofu</span>
+            </div>
+            <div class="cuisine-action">
+              <span>View Chinese Menu</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Italian Cuisine Card -->
+        <div class="cuisine-card" data-target-cuisine="italian">
+          <div class="cuisine-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Italian Cuisine">
+            <div class="cuisine-flag-badge">
+              <span>🇮🇹</span> Italian Kitchen
+            </div>
+          </div>
+          <div class="cuisine-info">
+            <h3>Italian Gastronomy</h3>
+            <p>48-hour fermented sourdough Neapolitan pizzas baked at 450°C, bronze-cut pastas, Umbrian black truffle Alfredo, and creamy espresso tiramisù.</p>
+            <div class="cuisine-signature-tags">
+              <span class="cuisine-tag">Margherita D.O.C.</span>
+              <span class="cuisine-tag">Truffle Fettuccine</span>
+              <span class="cuisine-tag">Lasagna Bolognese</span>
+              <span class="cuisine-tag">Tiramisù</span>
+            </div>
+            <div class="cuisine-action">
+              <span>View Italian Menu</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GOURMET MENU SECTION ==================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Handcrafted Offerings</span>
+        <h2 class="section-title">The World Kitchen Menu</h2>
+        <p class="section-subtitle">
+          Filter by your preferred cuisine or dietary preference. Click <strong>'🍳 Recipe'</strong> on any dish to view measured ingredients, cookware guides, and step-by-step home cooking instructions!
+        </p>
+      </div>
+
+      <!-- Filter Toolbar -->
+      <div class="filter-toolbar">
+        <!-- Search & Sort Row -->
+        <div class="search-sort-row">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search dishes, ingredients (e.g. 'paneer', 'dim sum', 'pizza', 'truffle')...">
+            <button class="search-clear-btn" id="searchClearBtn" title="Clear search">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="sort-select-wrapper">
+            <span class="sort-label"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort:</span>
+            <select id="sortSelect" class="sort-select">
+              <option value="popular">Most Popular</option>
+              <option value="rating">Highest Rated</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Primary Cuisine Filter Tabs -->
+        <div class="cuisine-tabs">
+          <button class="cuisine-tab-btn active" data-cuisine="all">
+            <i class="fa-solid fa-globe"></i> All Cuisines
+            <span class="tab-count">36</span>
+          </button>
+          <button class="cuisine-tab-btn" data-cuisine="indian">
+            <span>🇮🇳</span> Indian Kitchen
+            <span class="tab-count">12</span>
+          </button>
+          <button class="cuisine-tab-btn" data-cuisine="chinese">
+            <span>🇨🇳</span> Chinese Wok
+            <span class="tab-count">12</span>
+          </button>
+          <button class="cuisine-tab-btn" data-cuisine="italian">
+            <span>🇮🇹</span> Italian Cucina
+            <span class="tab-count">12</span>
+          </button>
+        </div>
+
+        <!-- Secondary Filter: Course Pills & Dietary Toggles -->
+        <div class="secondary-filter-row">
+          <div class="course-pills">
+            <button class="course-pill-btn active" data-category="all">All Courses</button>
+            <button class="course-pill-btn" data-category="starter">Starters & Dim Sum</button>
+            <button class="course-pill-btn" data-category="main">Main Courses</button>
+            <button class="course-pill-btn" data-category="bread_rice">Breads, Rice & Noodles</button>
+            <button class="course-pill-btn" data-category="dessert">Desserts & Sweets</button>
+          </div>
+
+          <div class="dietary-filters">
+            <button class="dietary-btn" data-dietary="all" style="border-color: var(--primary);">
+              <span>All</span>
+            </button>
+            <button class="dietary-btn" data-dietary="veg">
+              <div class="veg-icon"><span></span></div>
+              <span>Veg Only</span>
+            </button>
+            <button class="dietary-btn" data-dietary="nonveg">
+              <div class="nonveg-icon"><span></span></div>
+              <span>Non-Veg</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CULINARY HERITAGE & MASTER CHEFS ==================== -->
+  <section class="heritage-section" id="heritage">
+    <div class="container heritage-grid">
+      <div class="heritage-img-collage">
+        <div class="collage-img">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80" alt="Master Chef cooking in wok">
+        </div>
+        <div class="collage-img">
+          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80" alt="Italian pasta and dough preparation">
+        </div>
+        <div class="collage-img">
+          <img src="https://images.unsplash.com/photo-1507048821117-6573c21143f8?auto=format&fit=crop&w=600&q=80" alt="Authentic spices and herbs">
+        </div>
+        <div class="collage-img">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Fresh ingredients and herbs">
+        </div>
+        <div class="collage-center-badge">
+          <i class="fa-solid fa-medal" style="font-size: 1.25rem; margin-bottom: 3px;"></i>
+          <span>100%<br>Authentic</span>
+        </div>
+      </div>
+
+      <div class="heritage-text">
+        <span class="section-tag">Tradition Meets Precision</span>
+        <h2>Three Authentic Master Chefs Under One Roof</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
+          At Savoria, we don't believe in watered-down fusion. We honor the deep, authentic culinary traditions of each culture by stationing separate dedicated kitchens led by masters of each discipline:
+        </p>
+
+        <div class="heritage-features">
+          <div class="heritage-feature-item">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-pepper-hot"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Directly Sourced Regional Spices</h4>
+              <p>Kashmiri saffron, Guntur chillies, and organically stone-ground garam masalas create unparalleled Indian aromas.</p>
+            </div>
+          </div>
+
+          <div class="heritage-feature-item">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <div class="feature-content">
+              <h4>High-Btu Traditional Wok Stations</h4>
+              <p>True "Wok Hei" (breath of the wok) imparts the smoky, crisp essence to our Sichuan stir-fries and noodles.</p>
+            </div>
+          </div>
+
+          <div class="heritage-feature-item">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Italian D.O.P. Certified Imports</h4>
+              <p>San Marzano plum tomatoes from Mt. Vesuvius, Parmigiano-Reggiano, and artisanal Caputo flour form our Italian backbone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TABLE RESERVATION ==================== -->
+  <section class="reservation-section" id="reservation">
+    <div class="container reservation-container">
+      <span class="section-tag" style="color: var(--accent-gold);">Fine Dining Experience</span>
+      <h2 class="section-title">Reserve Your Table</h2>
+      <p class="section-subtitle">
+        Join us for an unforgettable multi-cuisine dining experience. Whether an intimate dinner or a grand celebration, we have the perfect table.
+      </p>
+
+      <div class="reservation-card">
+        <form id="reservationForm">
+          <div class="reservation-form-grid">
+            <div class="form-group">
+              <label for="resName"><i class="fa-regular fa-user"></i> Full Name</label>
+              <input type="text" id="resName" class="form-input" placeholder="e.g. Adarsh Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resPhone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+              <input type="tel" id="resPhone" class="form-input" placeholder="+91 98765 43210" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resDate"><i class="fa-regular fa-calendar"></i> Reservation Date</label>
+              <input type="date" id="resDate" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resTime"><i class="fa-regular fa-clock"></i> Preferred Time Slot</label>
+              <select id="resTime" class="form-select" required>
+                <option value="12:30 PM - Lunch">12:30 PM (Lunch)</option>
+                <option value="01:30 PM - Lunch">01:30 PM (Lunch)</option>
+                <option value="07:00 PM - Dinner">07:00 PM (Dinner)</option>
+                <option value="08:30 PM - Dinner" selected>08:30 PM (Dinner)</option>
+                <option value="09:45 PM - Late Dining">09:45 PM (Late Dining)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resGuests"><i class="fa-solid fa-users"></i> Number of Guests</label>
+              <select id="resGuests" class="form-select" required>
+                <option value="2 Guests">2 Guests (Couple Table)</option>
+                <option value="4 Guests" selected>4 Guests (Family Table)</option>
+                <option value="6 Guests">6 Guests (Celebration Table)</option>
+                <option value="8+ Guests">8+ Guests (Banquet / Group)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resCuisine"><i class="fa-solid fa-utensils"></i> Cuisine Preference</label>
+              <select id="resCuisine" class="form-select" required>
+                <option value="All Three Cuisines (Grand Tour)" selected>All 3 Cuisines (Grand Food Tour)</option>
+                <option value="Authentic Indian Tandoor Focus">Indian Tandoor & Curries</option>
+                <option value="Authentic Chinese Dim Sum & Wok">Chinese Dim Sum & Wok</option>
+                <option value="Italian Woodfired & Pasta">Italian Woodfired Pizza & Pasta</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="resNotes"><i class="fa-regular fa-message"></i> Special Requests or Dietary Notes (Optional)</label>
+              <input type="text" id="resNotes" class="form-input" placeholder="e.g. Window seat, anniversary celebration, nut allergy...">
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="margin: 0 auto; min-width: 240px; justify-content: center;">
+            <i class="fa-solid fa-check"></i> Confirm Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Guest Experiences</span>
+        <h2 class="section-title">Loved by Connoisseurs</h2>
+        <p class="section-subtitle">
+          Read what food critics and happy diners say about our Indian, Chinese, and Italian creations.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Indian Testimonial -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "The Butter Chicken and Awadhi Dum Biryani remind me of old Delhi's finest royal kitchens. The slow simmered Dal Makhani has that unbeatable smokiness!"
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80" alt="Priya Sharma" class="testimonial-avatar">
+            <div>
+              <h4 class="testimonial-name">Priya Sharma</h4>
+              <p class="testimonial-role">Verified Diner</p>
+            </div>
+            <span class="testimonial-cuisine-tag">🇮🇳 Indian Dining</span>
+          </div>
+        </div>
+
+        <!-- Chinese Testimonial -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "Finding genuine Sichuan wok hei and translucent handmade dim sum was difficult until Savoria opened. Their Dan Dan Noodles hit every single spicy and nutty note!"
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80" alt="David Chen" class="testimonial-avatar">
+            <div>
+              <h4 class="testimonial-name">David Chen</h4>
+              <p class="testimonial-role">Food & Travel Writer</p>
+            </div>
+            <span class="testimonial-cuisine-tag">🇨🇳 Chinese Dining</span>
+          </div>
+        </div>
+
+        <!-- Italian Testimonial -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "Mamma mia! The Margherita pizza crust has authentic leopard spotting and genuine buffalo mozzarella. The Black Truffle Alfredo is absolute gourmet perfection!"
+            </p>
+          </div>
+          <div class="testimonial-user">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80" alt="Elena Rossi" class="testimonial-avatar">
+            <div>
+              <h4 class="testimonial-name">Elena Rossi</h4>
+              <p class="testimonial-role">Culinary Consultant</p>
+            </div>
+            <span class="testimonial-cuisine-tag">🇮🇹 Italian Dining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 1rem; color: #fff;">
+            <div class="brand-icon">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div>
+              <span>Savor<span class="brand-highlight">ia</span></span>
+              <span class="brand-subtitle" style="color: #9ca3af;">World Kitchen</span>
+            </div>
+          </div>
+          <p>
+            A premier gastronomic destination bringing together the deep heritage and craftsmanship of Indian, Chinese, and Italian cooking cultures.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Our Cuisines</h4>
+          <ul class="footer-links">
+            <li><a href="#menu">🇮🇳 North & South Indian</a></li>
+            <li><a href="#menu">🇨🇳 Sichuan & Cantonese Wok</a></li>
+            <li><a href="#menu">🇮🇹 Neapolitan Woodfired Pizza</a></li>
+            <li><a href="#menu">🇮🇹 Bronze-Cut Handcrafted Pasta</a></li>
+            <li><a href="#menu">🍨 Artisanal Desserts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Hours & Location</h4>
+          <ul class="footer-links" style="color: #9ca3af;">
+            <li><strong>Mon - Fri:</strong> 11:30 AM – 11:00 PM</li>
+            <li><strong>Sat - Sun:</strong> 11:00 AM – 11:30 PM</li>
+            <li><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> 42 Heritage Boulevard, Gourmet Row</li>
+            <li><i class="fa-solid fa-phone" style="color: var(--primary);"></i> +91 98765 43210</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Gourmet Club</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 0.75rem;">
+            Subscribe to receive secret chef specials and <strong>20% OFF</strong> your first order with promo coupon <strong>FEAST20</strong>.
+          </p>
+          <form id="newsletterForm" class="newsletter-box">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Savoria World Kitchen. All rights reserved.</p>
+        <p>Crafted with passion for Indian, Chinese & Italian food lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SHOPPING CART DRAWER ==================== -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>
+          <i class="fa-solid fa-basket-shopping" style="color: var(--primary);"></i>
+          <span>Your Gourmet Cart</span>
+        </h3>
+        <button class="cart-close-btn" id="cartCloseBtn" title="Close Cart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Free Delivery Progress Bar -->
+      <div class="free-delivery-banner">
+        <div id="freeDeliveryText">Add items worth <strong>₹500</strong> for Free Delivery!</div>
+        <div class="free-delivery-progress">
+          <div class="free-delivery-fill" id="freeDeliveryFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items List Container -->
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Cart Footer / Bill Breakdown -->
+      <div class="cart-footer">
+        <!-- Promo Coupon Box -->
+        <div class="coupon-section">
+          <input type="text" id="couponInput" class="coupon-input" placeholder="Coupon Code (e.g. FEAST20)">
+          <button id="applyCouponBtn" class="coupon-btn">Apply</button>
+        </div>
+
+        <div class="bill-breakdown">
+          <div class="bill-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">₹0</span>
+          </div>
+          <div class="bill-row">
+            <span>Coupon Discount</span>
+            <span id="cartDiscount" style="color: #16a34a;">₹0</span>
+          </div>
+          <div class="bill-row">
+            <span>Delivery Fee</span>
+            <span id="cartDelivery">₹0</span>
+          </div>
+          <div class="bill-row">
+            <span>Taxes & GST (5%)</span>
+            <span id="cartTaxes">₹0</span>
+          </div>
+          <div class="bill-row total-row">
+            <span>Grand Total</span>
+            <span id="cartTotal">₹0</span>
+          </div>
+        </div>
+
+        <button id="checkoutBtn" class="btn-checkout" disabled>
+          <span>Proceed to Checkout</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== QUICK VIEW MODAL ==================== -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-box">
+      <!-- Populated dynamically by JavaScript -->
+    </div>
+  </div>
+
+  <!-- ==================== CHECKOUT MODAL ==================== -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box checkout-box">
+      <div class="checkout-header">
+        <button class="modal-close-btn" id="checkoutCloseBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h3><i class="fa-solid fa-truck-fast" style="color: var(--primary);"></i> Delivery & Payment</h3>
+      </div>
+      <div class="checkout-body">
+        <form id="checkoutForm">
+          <div class="reservation-form-grid" style="margin-bottom: 1.25rem;">
+            <div class="form-group">
+              <label for="orderName"><i class="fa-regular fa-user"></i> Full Name</label>
+              <input type="text" id="orderName" class="form-input" style="background: var(--bg-surface-subtle); color: var(--text-primary); border-color: var(--border-subtle);" placeholder="Adarsh Sharma" required>
+            </div>
+            <div class="form-group">
+              <label for="orderPhone"><i class="fa-solid fa-phone"></i> Contact Phone</label>
+              <input type="tel" id="orderPhone" class="form-input" style="background: var(--bg-surface-subtle); color: var(--text-primary); border-color: var(--border-subtle);" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group full-width">
+              <label for="orderAddress"><i class="fa-solid fa-map-location-dot"></i> Delivery Address</label>
+              <input type="text" id="orderAddress" class="form-input" style="background: var(--bg-surface-subtle); color: var(--text-primary); border-color: var(--border-subtle);" placeholder="Flat / House No, Street, Landmark, City" required>
+            </div>
+            <div class="form-group full-width">
+              <label for="orderInstructions"><i class="fa-regular fa-bell"></i> Delivery Note (Optional)</label>
+              <input type="text" id="orderInstructions" class="form-input" style="background: var(--bg-surface-subtle); color: var(--text-primary); border-color: var(--border-subtle);" placeholder="e.g. Leave at door, call on arrival, extra napkins...">
+            </div>
+          </div>
+
+          <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); display: block; margin-bottom: 0.5rem;">
+            Select Payment Method
+          </label>
+          <div class="payment-method-selector">
+            <div class="payment-card-option active" data-method="upi">
+              <i class="fa-solid fa-qrcode" style="color: #0284c7;"></i>
+              <span>UPI / QR Code</span>
+            </div>
+            <div class="payment-card-option" data-method="card">
+              <i class="fa-regular fa-credit-card" style="color: #f59e0b;"></i>
+              <span>Credit/Debit Card</span>
+            </div>
+            <div class="payment-card-option" data-method="cod">
+              <i class="fa-solid fa-money-bill-wave" style="color: #16a34a;"></i>
+              <span>Cash on Delivery</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-checkout">
+            <i class="fa-solid fa-lock"></i> Place Order Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== ORDER SUCCESS & TRACKER MODAL ==================== -->
+  <div class="modal-overlay" id="orderSuccessModal">
+    <div class="modal-box" style="max-width: 520px;">
+      <button class="modal-close-btn" id="orderSuccessCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="order-success-content">
+        <div class="order-success-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2 style="font-size: 1.6rem; font-weight: 800; margin-bottom: 0.35rem;">Order Placed Successfully!</h2>
+        <p style="color: var(--text-secondary); font-size: 0.92rem;">
+          Order ID: <strong id="confirmedOrderId" style="color: var(--primary);">#SAV-849102</strong>
+        </p>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+          Estimated delivery in <strong>30 - 40 minutes</strong>.
+        </p>
+
+        <!-- Live Tracker Timeline -->
+        <div class="order-tracker-timeline">
+          <div class="tracker-step completed">
+            <div class="step-dot"><i class="fa-solid fa-check"></i></div>
+            <span class="step-label">Confirmed</span>
+          </div>
+          <div class="tracker-step active">
+            <div class="step-dot"><i class="fa-solid fa-fire-burner"></i></div>
+            <span class="step-label">Cooking</span>
+          </div>
+          <div class="tracker-step">
+            <div class="step-dot"><i class="fa-solid fa-motorcycle"></i></div>
+            <span class="step-label">On The Way</span>
+          </div>
+          <div class="tracker-step">
+            <div class="step-dot"><i class="fa-solid fa-house-chimney"></i></div>
+            <span class="step-label">Delivered</span>
+          </div>
+        </div>
+
+        <button class="btn-primary" onclick="document.getElementById('orderSuccessModal').classList.remove('open'); document.body.style.overflow='';" style="width: 100%; justify-content: center;">
+          Back to Menu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== RESERVATION CONFIRMED MODAL ==================== -->
+  <div class="modal-overlay" id="reservationSuccessModal">
+    <div class="modal-box" style="max-width: 480px;">
+      <button class="modal-close-btn" id="reservationSuccessCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="order-success-content">
+        <div class="order-success-icon" style="background: #e0f2fe; color: #0284c7;">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem;">Table Reserved!</h2>
+        <p id="reservationConfirmedDetails" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+          Your table has been reserved successfully.
+        </p>
+        <button class="btn-primary" onclick="document.getElementById('reservationSuccessModal').classList.remove('open'); document.body.style.overflow='';" style="width: 100%; justify-content: center;">
+          Wonderful, Thank You!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
